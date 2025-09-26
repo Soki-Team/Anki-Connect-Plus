@@ -3,8 +3,8 @@
     "apiLogPath": null,
     "webBindAddress": "127.0.0.1",
     "webBindPort": 8765,
-    "webCorsOriginList": [ "http://localhost:3090",
-        "http://localhost:3080",
+    "webCorsOriginList": [ 
+        "http://localhost",
         "https://sokimemo.com",
         "https://www.sokimemo.com"],
     "ignoreOriginList": []

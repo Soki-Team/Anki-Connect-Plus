@@ -1,6 +1,7 @@
 # Anki-Connect for Soki
+Fork of [Anki-Connect](https://git.sr.ht/~foosoft/anki-connect) with additional functionalities for better usage with Soki projects like FMA.
 
-Copy of ther Anki-Connect package for Soki usage. Anki-Connect is compatible with the latest stable (2.1.x) releases of Anki; older versions (2.0.x and below) are no longer supported.
+Anki-Connect for Soki is compatible with the latest stable (2.1.x) releases of Anki; older versions (2.0.x and below) are no longer supported.
 
 ## Installation
 

@@ -4101,7 +4101,7 @@ Documentation for currently supported actions is split up by category and is ref
     }
     ```
     </details>
-s
+
 #### `notesModTime`
 
 *   Returns a list of objects containings for each note ID the modification time.

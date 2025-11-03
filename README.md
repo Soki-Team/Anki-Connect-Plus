@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Anki Connect Plus
+# Anki Connect Plus (ACP)
 Fork of [Anki-Connect](https://git.sr.ht/~foosoft/anki-connect) with additional features to facilitate syncing with other projects like our Flashcard Maker for Anki (FMA).
 Everything that can be done in Anki Connect can also be done with Anki Connect Plus, keeping compatibility with other addons relying on it.
 
@@ -18,7 +18,7 @@ See the list of **[supported actions](./SUPPORTED_ACTIONS.md)**
 ## Installation
 
 Until the add-on is officially deployed, Anki requires a **manual installation**.  
-Follow these steps to add **ACFS** to Anki:
+Follow these steps to add **ACP** to Anki:
 
 1. **Zip the plugin contents**  
    - Go inside the plugin folder.  

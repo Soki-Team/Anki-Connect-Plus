@@ -1,6 +1,6 @@
 <p>
   <a href="https://soki.ai/projects/anki-connect-plus">
-    <img src="./assets/ankiConnectPlus.svg" alt="Anki Connect Plus Logo" width="200">
+    <img src="./assets/ankiConnectPlus.svg" alt="Anki Connect Plus Logo" width="128">
   </a>
 </p>
 
@@ -8,7 +8,7 @@
 Fork of [Anki-Connect](https://git.sr.ht/~foosoft/anki-connect) with additional features to facilitate syncing with other projects like our Flashcard Maker for Anki (FMA).
 Everything that can be done in Anki Connect can also be done with Anki Connect Plus, keeping compatibility with other addons relying on it.
 
-Find a full list all modifications in the **[changelog](./CHANGELOG.md)**
+Find a full list of all modifications in the **[changelog](./CHANGELOG.md)**
 
 Anki Connect Plus is compatible with the latest stable (2.1.x) releases of Anki; older versions (2.0.x and below) are no longer supported.
 

@@ -5,10 +5,11 @@
     "webBindPort": 8765,
     "webCorsOriginList": [ 
         "http://localhost",
-        "https://sokimemo.com",
-        "https://www.sokimemo.com",
         "https://soki.ai",
-        "https://www.soki.ai"
+        "https://www.soki.ai",
+        "https://fma.soki.ai",
+        "https://sokimemo.com",
+        "https://www.sokimemo.com"
     ],
     "ignoreOriginList": []
 }

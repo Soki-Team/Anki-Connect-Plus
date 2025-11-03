@@ -1,6 +1,6 @@
 {
-  "package": "ACFS",
-  "name": "AnkiConnect for Soki",
+  "package": "ACP",
+  "name": "Anki Connect Plus",
   "mod": 1757065200,
   "conflicts": ["2055492159"]
 }

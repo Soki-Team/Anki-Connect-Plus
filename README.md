@@ -10,7 +10,7 @@ Everything that can be done in Anki Connect can also be done with Anki Connect P
 
 Find a full list of all modifications in the **[changelog](./CHANGELOG.md)**
 
-Anki Connect Plus is compatible with the latest stable (2.1.x) releases of Anki; older versions (2.0.x and below) are no longer supported.
+Anki Connect Plus is compatible with the latest Anki stable release since 23.10.1; older versions (2.1.45 or older are no longer supported.
 
 ## Documentation
 See the list of **[supported actions](./SUPPORTED_ACTIONS.md)**
@@ -31,7 +31,7 @@ Follow these steps to add **ACP** to Anki:
 
 3. **Install the add-on in Anki**  
 - Open Anki.  
-- Go to **Tools > Add-ons**.  (ctrs+shift+A for windows) 
+- Go to **Tools > Add-ons**.  (ctrl + shift + A for windows) 
 - Click **Install from file...** and select/drag the `ACFS.ankiaddon` file.  
 
 4. **Restart Anki**  

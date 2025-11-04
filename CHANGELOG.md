@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes made by us to the source code of Anki-Connect project are documented below.
+All notable changes made by us to the source code of AnkiConnect Plus project are documented below.
 
 ## Fixes
 - CORS not working when allowing localhost unless the port is specified explicitly.

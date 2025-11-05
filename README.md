@@ -1,6 +1,6 @@
 <p>
   <a href="https://soki.ai/projects/anki-connect-plus">
-    <img src="./assets/ankiConnectPlus.svg" alt="Anki Connect Plus Logo" width="128">
+    <img src="./assets/ankiConnectPlus.svg" alt="Anki Connect Plus Logo" width="200">
   </a>
 </p>
 
@@ -27,12 +27,12 @@ Follow these steps to add **ACP** to Anki:
    ⚠️ *Important:* Do **not** zip the plugin folder itself — only its contents.  
 
 2. **Rename the archive**  
-   Change the file name and extension to: ACFS.ankiaddon
+   Change the file name and extension to: AnkiConnectPlus.ankiaddon
 
 3. **Install the add-on in Anki**  
 - Open Anki.  
 - Go to **Tools > Add-ons**.  (ctrs+shift+A for windows) 
-- Click **Install from file...** and select/drag the `ACFS.ankiaddon` file.  
+- Click **Install from file...** and select/drag the `AnkiConnectPlus.ankiaddon` file.  
 
 4. **Restart Anki**  
 Close and reopen Anki to activate the add-on.

@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 # git clean -xdf
 # 7za a AnkiConnectPlus.zip ./plugin/*
-cd plugin && zip -r ../AnkiConnectPlus.ankiaddon *
+rm AnkiConnectPlus.ankiaddon && cd plugin && zip -r ../AnkiConnectPlus.ankiaddon *
 

@@ -2783,6 +2783,7 @@ Documentation for currently supported actions is split up by category and is ref
         "params": {
             "modelName": "newModelName",
             "inOrderFields": ["Field1", "Field2", "Field3"],
+            "collapsedFields": ["Field3"],
             "css": "Optional CSS with default to builtin css",
             "isCloze": false,
             "cardTemplates": [
@@ -2823,6 +2824,13 @@ Documentation for currently supported actions is split up by category and is ref
                     "rtl":false,
                     "font":"Arial",
                     "size":20,
+                    "description": "",
+                    "plainText": false,
+                    "collapsed": false,
+                    "excludeFromSearch": false,
+                    "id": 878924219939914029,
+                    "tag": null,
+                    "preventDeletion": false,
                     "media":[
 
                     ]
@@ -2834,6 +2842,31 @@ Documentation for currently supported actions is split up by category and is ref
                     "rtl":false,
                     "font":"Arial",
                     "size":20,
+                    "description": "",
+                    "plainText": false,
+                    "collapsed": false,
+                    "excludeFromSearch": false,
+                    "id": 878924219939914030,
+                    "tag": null,
+                    "preventDeletion": false,
+                    "media":[
+
+                    ]
+                },
+                {
+                    "name":"Field3",
+                    "ord":1,
+                    "sticky":false,
+                    "rtl":false,
+                    "font":"Arial",
+                    "size":20,
+                    "description": "",
+                    "plainText": false,
+                    "collapsed": true,
+                    "excludeFromSearch": false,
+                    "id": 878924219939914030,
+                    "tag": null,
+                    "preventDeletion": false,
                     "media":[
 
                     ]

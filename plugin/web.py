@@ -182,7 +182,9 @@ class WebServer:
         except (ValueError, jsonschema.ValidationError) as e:
             if allowed:
                 if len(req.body) == 0:
-                    body = json.dumps({"apiVersion": f"AnkiConnect v.{util.setting('apiVersion')}"}).encode('utf-8')
+                    body = json.dumps({
+                        "apiVersion": f"Anki Connect Plus v.{util.setting('apiVersion')}"
+                        }).encode('utf-8')
                 else:
                     reply = format_exception_reply(util.setting('apiVersion'), e)
                     body = json.dumps(reply).encode('utf-8')

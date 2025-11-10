@@ -7,6 +7,6 @@ All notable changes made by us to the source code of the Anki-Connect project ar
 
 ## Additions
 - Return of **note modification time** in the `notesInfo` method
-- Added optional parameter `collapsedFields` in Method `createModel`
+- Improved method `createModel` to set field descriptions and collapse status in the `inOrderFields` parameter
 - New method: `notesModTime` that retrieves modification timestamps for notes
 - New method: `isFsrsActive` that detects usage of FSRS for scheduling

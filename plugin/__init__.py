@@ -1125,7 +1125,7 @@ class AnkiConnect:
 
 
     @util.api()
-    def createModel(self, modelName, cardTemplates, inOrderFields, collapsedFields = [], css = None, isCloze = False):
+    def createModel(self, modelName, cardTemplates, inOrderFields, css = None, isCloze = False):
         # https://github.com/dae/anki/blob/b06b70f7214fb1f2ce33ba06d2b095384b81f874/anki/stdmodels.py
         if len(inOrderFields) == 0:
             raise Exception('Must provide at least one field for inOrderFields')
@@ -1144,9 +1144,16 @@ class AnkiConnect:
 
         # Create fields and add them to Note
         for field in inOrderFields:
-            fm = mm.new_field(field)
-            fm["collapsed"] = field in collapsedFields
-            mm.addField(m, fm)
+            if isinstance(field, str):
+                fm = mm.new_field(field)
+                mm.addField(m, fm)
+            elif isinstance(field, dict) and 'name' in field:
+                fm = mm.new_field(field['name'])
+                if 'description' in field:
+                    fm['description'] = field['description']
+                if 'collapsed' in field:
+                    fm['collapsed'] = field['collapsed']
+                mm.addField(m, fm)
 
         # Add shared css to model if exists. Use default otherwise
         if (css is not None):

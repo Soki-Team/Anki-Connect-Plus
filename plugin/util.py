@@ -71,7 +71,7 @@ DEFAULT_CONFIG = {
     'apiLogPath': None,
     'apiPollInterval': 25,
     'apiVersion': 6,
-    'version': '1.1.2',
+    'version': '1.2.1',
     'webBacklog': 5,
     'webBindAddress': os.getenv('ANKICONNECT_BIND_ADDRESS', '127.0.0.1'),
     'webBindPort': 8765,

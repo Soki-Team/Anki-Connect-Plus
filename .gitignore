@@ -5,3 +5,4 @@ meta.json
 .idea/
 .tox/
 env/
+tools/

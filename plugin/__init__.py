@@ -397,6 +397,12 @@ class AnkiConnect:
     def version(self):
         return util.setting('apiVersion')
 
+    @util.api()
+    def getVersion(self):
+        return {
+            'anki': aqt.appVersion,
+            'ankiConnectPlus': util.setting('version')
+        }
 
     @util.api()
     def requestPermission(self, origin, allowed):

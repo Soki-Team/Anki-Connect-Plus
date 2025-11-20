@@ -1886,6 +1886,32 @@ Documentation for currently supported actions is split up by category and is ref
     ```
     </details>
 
+#### `getVersion`
+
+*   Gets information about the Anki and Anki Connect Plus version in use.
+
+    <details>
+    <summary><i>Sample request:</i></summary>
+    ```json
+    {
+        "action": "getVersion",
+        "version": 6
+    }
+    ```
+    </details>
+    <details>
+    <summary><i>Sample result:</i></summary>
+
+    ```json
+    {
+        "result": {
+            "anki": "24.06.3",
+            "ankiConnectPlus": "1.2.0"
+        },
+        "error": null
+    }
+    ```
+    </details>
 
 #### `apiReflect`
 

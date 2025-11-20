@@ -107,12 +107,12 @@ def main():
         if args.annotated:
             run(["git", "tag", "-a", tag_name, "-m", f"Release {tag_name}"])
         else:
-            run(["git", "tag", tag_name])
+            run(["git", "tag", f"v{tag_name}"])
         print("created tag", tag_name)
 
         if args.push:
             run(["git", "push", "origin", "HEAD"])
-            run(["git", "push", "origin", tag_name])
+            run(["git", "push", "origin", f"v{tag_name}"])
             print("pushed HEAD and tag to origin")
 
     except subprocess.CalledProcessError as e:

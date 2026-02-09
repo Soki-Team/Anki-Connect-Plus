@@ -11,3 +11,4 @@ All notable changes made by us to the source code of the Anki-Connect project ar
 - New method: `notesModTime` that retrieves modification timestamps for notes
 - New method: `isFsrsActive` that detects usage of FSRS for scheduling
 - New method: `getVersion` that retrieves the Anki & Anki Connect Plus version in use
+- New method: `getCollection` that returns a description of the entire collection

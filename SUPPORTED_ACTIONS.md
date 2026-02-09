@@ -10,6 +10,7 @@ Documentation for currently supported actions is split up by category and is ref
 * [Model Actions](#model-actions)
 * [Note Actions](#note-actions)
 * [Statistic Actions](#statistic-actions)
+* [Collection Actions](#collection-actions)
 
 ---
 
@@ -4499,6 +4500,205 @@ Documentation for currently supported actions is split up by category and is ref
     {
         "result": null,
         "error": null
+    }
+    ```
+    </details>
+
+### Collection Actions
+#### `getCollection`
+
+*   Gets the complete collection data including creation time, modification time, last sync time, note count, card count, configuration settings, models (note types), decks, deck configurations, and tags.
+    <details>
+    <summary><i>Sample request:</i></summary>
+
+    ```json
+    {
+        "action": "getCollection",
+        "version": 6
+    }
+    ```
+    </details>
+
+    <details>
+    <summary><i>Sample result:</i></summary>
+
+    ```json
+    {
+    "result": {
+        "created": 1770606000,
+        "modified": 0,
+        "lastSync": 0,
+        "noteCount": 0,
+        "cardCount": 0,
+        "config": {
+            "estTimes": true,
+            "activeDecks": [
+                1
+            ],
+            "sortType": "noteFld",
+            "curDeck": 1,
+            "addToCur": true,
+            "nextPos": 1,
+            "schedVer": 2,
+            "collapseTime": 1200,
+            "dayLearnFirst": false,
+            "sched2021": true,
+            "localOffset": -60,
+            "dueCounts": true,
+            "timeLim": 0,
+            "rollover": 4,
+            "sortBackwards": false,
+            "curModel": 1770666744104,
+            "newSpread": 0,
+            "creationOffset": -60
+        },
+        "models": [
+            {
+                "id": 1770666744104,
+                "name": "Basic",
+                "type": 0,
+                "mod": 0,
+                "usn": 0,
+                "sortf": 0,
+                "did": null,
+                "tmpls": [
+                    {
+                        "name": "Card 1",
+                        "ord": 0,
+                        "qfmt": "{{Front}}",
+                        "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                        "bqfmt": "",
+                        "bafmt": "",
+                        "did": null,
+                        "bfont": "",
+                        "bsize": 0,
+                        "id": -4866531555485365621
+                    }
+                ],
+                "flds": [
+                    {
+                        "name": "Front",
+                        "ord": 0,
+                        "sticky": false,
+                        "rtl": false,
+                        "font": "Arial",
+                        "size": 20,
+                        "description": "",
+                        "plainText": false,
+                        "collapsed": false,
+                        "excludeFromSearch": false,
+                        "id": 2672750188060322590,
+                        "tag": null,
+                        "preventDeletion": false
+                    },
+                    {
+                        "name": "Back",
+                        "ord": 1,
+                        "sticky": false,
+                        "rtl": false,
+                        "font": "Arial",
+                        "size": 20,
+                        "description": "",
+                        "plainText": false,
+                        "collapsed": false,
+                        "excludeFromSearch": false,
+                        "id": -1535883423884824874,
+                        "tag": null,
+                        "preventDeletion": false
+                    }
+                ],
+                "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n",
+                "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+                "latexPost": "\\end{document}",
+                "latexsvg": false,
+                "req": [
+                    [
+                        0,
+                        "any",
+                        [
+                            0
+                        ]
+                    ]
+                ],
+                "originalStockKind": 1
+            }
+        ],
+        "decks": [
+            {
+                "id": 1,
+                "mod": 0,
+                "name": "Default",
+                "desc": "",
+                "dyn": 0,
+                "conf": 1
+            }
+        ],
+        "dconf": [
+            {
+                "id": 1,
+                "mod": 0,
+                "name": "Default",
+                "usn": 0,
+                "maxTaken": 60,
+                "autoplay": true,
+                "timer": 0,
+                "replayq": true,
+                "new": {
+                    "bury": false,
+                    "delays": [
+                        1.0,
+                        10.0
+                    ],
+                    "initialFactor": 2500,
+                    "ints": [
+                        1,
+                        4,
+                        0
+                    ],
+                    "order": 1,
+                    "perDay": 20
+                },
+                "rev": {
+                    "bury": false,
+                    "ease4": 1.3,
+                    "ivlFct": 1.0,
+                    "maxIvl": 36500,
+                    "perDay": 200,
+                    "hardFactor": 1.2
+                },
+                "lapse": {
+                    "delays": [
+                        10.0
+                    ],
+                    "leechAction": 1,
+                    "leechFails": 8,
+                    "minInt": 1,
+                    "mult": 0.0
+                },
+                "dyn": false,
+                "newMix": 0,
+                "newPerDayMinimum": 0,
+                "interdayLearningMix": 0,
+                "reviewOrder": 0,
+                "newSortOrder": 0,
+                "newGatherPriority": 0,
+                "buryInterdayLearning": false,
+                "fsrsWeights": [],
+                "desiredRetention": 0.9,
+                "ignoreRevlogsBeforeDate": "",
+                "stopTimerOnAnswer": false,
+                "secondsToShowQuestion": 0.0,
+                "secondsToShowAnswer": 0.0,
+                "questionAction": 0,
+                "answerAction": 0,
+                "waitForAudio": true,
+                "sm2Retention": 0.9,
+                "weightSearch": ""
+            }
+        ],
+        "tags": []
+    },
+    "error": null
     }
     ```
     </details>

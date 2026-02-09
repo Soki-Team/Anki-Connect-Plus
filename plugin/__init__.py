@@ -2190,6 +2190,31 @@ class AnkiConnect:
 
         return result
 
+    @util.api()
+    def getCollection(self):
+        """Return the entire collection object as a JSON-serializable dictionary."""
+        col = self.collection()
+        collection = col.db.first("SELECT * FROM col")
+        
+        # Restrict the deck information to key fields to avoid exposing unnecessary details.
+        decks = [
+            {k: deck[k] for k in ['id', 'mod', 'name','desc', 'dyn', 'conf'] if k in deck}
+            for deck in col.decks.all()
+        ]
+        
+        return {
+            'created': collection[1],
+            'modified': collection[2],
+            'lastSync': collection[7],
+            'noteCount': col.note_count(),
+            'cardCount': col.card_count(),
+            'config': col.all_config(),
+            'models': col.models.all(),
+            'decks': decks,
+            'dconf': col.decks.all_config(),
+            'tags': col.tags.all(),
+        }
+
 #
 # Entry
 #
